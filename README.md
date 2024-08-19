@@ -20,3 +20,36 @@ PhoneNow's Human Resources dapartment consider diversity and inclusions as busin
 This data was provided to me by the PwC Power BI microinternship hosted by Forage. A copy of the data is included in this repository under the file name: 03 Diversity-Inclusion-Dataset.xlsx.
 
 ## Data Attributes
+The data is PhoneNow's customer data. It includes data on customer demographics, payment data, and the type of services they subscribed to. The date ranges from Jan. 1 2021 to Mar. 31 2021.
+* Employee ID - A unique number used to identify an employee.
+* Gender - The gender of the employee (male or female).
+* Job Level after FY20 promotions - The employee's job level after the fiscal year 2020 promotions.
+* New hire FY20? - Whether or not the employee is a new hire in fiscal year 2020.
+* FY20 Performance Rating - The performance rating for an employee during fiscal year 2020. The higher the rating, the better the performance.
+* Promotion in FY21? - Whether or not the employee will be promoted in fiscal year 2021.
+* In base group for Promotion FY21 - 
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
