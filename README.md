@@ -15,6 +15,8 @@ PhoneNow's Human Resources dapartment consider diversity and inclusions as busin
 * Defining KPIs
 * Data Transfroming (Excel)
 * Data Transforming (Power BI)
+* Creating Measures (Power BI)
+* Creating Calulated Columns (Power BI)
 
 ## Data Sourcing
 This data was provided to me by the PwC Power BI microinternship hosted by Forage. A copy of the data is included in this repository under the file name: 03 Diversity-Inclusion-Dataset.xlsx.
@@ -27,22 +29,22 @@ The data is PhoneNow's customer data. It includes data on customer demographics,
 * New hire FY20? - Whether or not the employee is a new hire in fiscal year 2020.
 * FY20 Performance Rating - The performance rating for an employee during fiscal year 2020. The higher the rating, the better the performance.
 * Promotion in FY21? - Whether or not the employee will be promoted in fiscal year 2021.
-* In base group for Promotion FY21 - 
-* a
-* a
-* a
-* a
-* a
-* a
-* a
-* a
-* a
-* a
-* a
-* a
-* a
-* a
-* a
+* In base group for Promotion FY21 - Whether or not the employee is considered for promotion in fiscal year 2021.
+* Target hire balance - The desired gender balance ratio for an employee's position.
+* FY20 leaver? - Has the employee left during fiscal year 2020?
+* In base group for turnover FY20 - Whether or not the employee is considering leaving in fiscal year 2020.
+* Department @01.07.2020 - The employee's department at Jan. 07 2020.
+* Leaver FY - The fiscal year that the employee has left.
+* Job Level after FY21 promotions - The employee's job level after the fiscal year 2021 promotions.
+* Last Department in FY20 - The employee's department at the end of fiscal year 2020.
+* FTE group - What percentage of a full day is the employee working?
+* Time type - Whether the employee is a full time employee or part time employee.
+* Department & JL group PRA status - The gender balance level for the employee's department and job level.
+* Department & JL group for PRA - The epmloyee's department and job level.
+* Job Level group PRA status - The gender balance level for the employee's job level.
+* Job Level group for PRA - The employee's job level.
+* Time in Job Level @01.07.2020 -  The number of years the employee has been at their job level.
+* Job Level before FY20 promotions - The employee's job level before the fiscal year 2020 promotion.
 * a
 * a
 * a
