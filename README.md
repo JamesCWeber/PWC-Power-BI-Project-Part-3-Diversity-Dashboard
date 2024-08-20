@@ -45,13 +45,15 @@ The data is PhoneNow's customer data. It includes data on customer demographics,
 * Job Level group for PRA - The employee's job level.
 * Time in Job Level @01.07.2020 -  The number of years the employee has been at their job level.
 * Job Level before FY20 promotions - The employee's job level before the fiscal year 2020 promotion.
-* a
-* a
-* a
-* a
-* a
-* a
-* a
-* a
-* a
-* a
+* Promotion in FY20? - Whether the employee will be promoted in fiscal year 2020.
+* FY19 Performance Rating - The employee's performance rating in fiscal year 2019. The higher the rating, the better the performance.
+* Age group - The age group of the employee.
+* Age @01.07.2020 -  The age of the employee on Jan. 07 2020.
+* Nationality 1 - The employee's country of origin.
+* Region group: nationality 1 - The employee's nationality, broader region than country.
+* Broad region group: nationality 1 - The employee's nationality, broad region group.
+* Last hire date - The date the employee was last hired.
+* Years since last hire - How long ago the employee's last hire date was.
+* Rand - Random numbers for calculations.
+
+## Data Transformation
