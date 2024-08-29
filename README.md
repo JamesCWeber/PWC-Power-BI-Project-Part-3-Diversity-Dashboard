@@ -57,3 +57,179 @@ The data is PhoneNow's customer data. It includes data on customer demographics,
 * Rand - Random numbers for calculations.
 
 ## Data Transformation
+The data was transformed using the Power Query Editor from Power BI.
+* To include relavant data into the dashboard, measures are created to calculate values from the data.
+* These measuress are used to calculate the total number of new hires, turnovers, and employees promoted:
+```
+# This measure calculates the number of New Hires
+Number of Hires = CALCULATE(
+                            COUNT('Pharma Group AG'[New hire FY20?]), 
+                            'Pharma Group AG'[New hire FY20?] = "Y")
+
+# This measure calculates the number of Leavers
+Number of Turnovers = CALCULATE(
+                                COUNT('Pharma Group AG'[FY20 leaver?]), 
+                                'Pharma Group AG'[FY20 leaver?] = "Yes")
+
+# This measure calculates the number of Employees Promoted
+Number of Promotions = CALCULATE(
+                                 COUNT('Pharma Group AG'[Employee ID]), 
+                                 'Pharma Group AG'[Promotion in FY21?] = "Yes")
+
+# The 3 measures above use the COUNT and CALCULATE functions.
+# The COUNT function counts the number of data points in a specified column.
+# The CALCIULATE functions applies a condition to an aggregate function (in this case, the COUNT function).
+# The first measure counts the number of data points in the "New hire FY20?" column where the value is "Y".
+# The second measure counts the number of data points in the "FY20 leaver?" column where the value is "Yes".
+# The third measure counts the number of data points in the "Employee ID" column where the value is the "Promotion in FY21?" column is "Yes".
+```
+* These measures are used to calculate the percentage of total employees who are new hires, turnovers, and who have been promoted:
+```
+# This measure calculates the Hiring Percentage
+Percentage of Hires = CONCATENATE(
+                                  (CALCULATE(
+                                             COUNT('Pharma Group AG'[New hire FY20?]),
+                                             'Pharma Group AG'[New hire FY20?] = "Y")/
+                                   COUNT('Pharma Group AG'[Employee ID]))*100,
+                                  "%")
+
+# This measure calculates the Turnover Percentage
+Percentage of Leavers = CONCATENATE(
+                                    (CALCULATE(
+                                               COUNT('Pharma Group AG'[FY20 leaver?]), 
+                                               'Pharma Group AG'[FY20 leaver?] = "Yes")/
+                                     COUNT('Pharma Group AG'[Employee ID])) * 100, 
+                                    "%")
+
+# This measure calculates the Promotion Percentage
+Percent of Promotions = CONCATENATE(
+                                    (CALCULATE(
+                                               COUNT('Pharma Group AG'[Employee ID]),
+                                               'Pharma Group AG'[Promotion in FY21?] = "Yes")/
+                                    COUNT('Pharma Group AG'[Employee ID])) * 100, 
+                                   "%")
+
+# All three measures first calculate the number of employees that matches their subcategory (the first function calculates the number of new hires, the second calcualtes the number of turnovers and the third calculates the number of employees promoted).
+# Then the number of new hires, turnovers, or promotees is divided by the total number of employees, and then multiplied by 100.
+# Lastly, the measures use CONCATENATE function to add a % sign at the end.
+```
+* These measures are used to calculate the gender ratio of new hires, turnovers, and employees who are promoted:
+```
+# Gender Ratio of New Hires
+Gender New Hires = CALCULATE(
+                             COUNT('Pharma Group AG'[Gender]), 
+                             'Pharma Group AG'[New hire FY20?] = "Y")
+
+# Gender Ratio of Leavers
+Gender Turnovers = CALCULATE(
+                             COUNT('Pharma Group AG'[Gender]), 
+                             'Pharma Group AG'[FY20 leaver?] = "Yes")
+
+# Gender Ratio Promotees
+Gender Promotions = CALCULATE(
+                              COUNT('Pharma Group AG'[Gender]), 
+                              'Pharma Group AG'[Promotion in FY21?] = "Yes")
+```
+* These measures are used to calculate the number of new hires, turnovers, and promoted employeed based on job type (full time or part time).
+```
+# New Hires Job Type
+Time Type Hires = CALCULATE(
+                            COUNT('Pharma Group AG'[Time type]), 
+                            'Pharma Group AG'[New hire FY20?] = "Y")
+
+# Leavers Job Type
+Time Type Turnovers = CALCULATE(
+                                COUNT('Pharma Group AG'[Time type]), 
+                                'Pharma Group AG'[FY20 leaver?] = "Yes")
+
+# Promotees Job Type
+Time Type Promotions = CALCULATE(
+                                 COUNT('Pharma Group AG'[Time type]), 
+                                 'Pharma Group AG'[Promotion in FY21?] = "Yes")
+```
+* These measures are used to calculate the number of new hires, turnovers, and promoted employeed based on job level (manager, senior manager, etc.).
+```
+# New Hires Job Level
+Job Level Hires = CALCULATE(
+                            COUNT('Pharma Group AG'[Job Level after FY20 promotions]),
+                            'Pharma Group AG'[New hire FY20?] = "Y")
+
+# Leavers Job Level
+Job Level Turnovers = CALCULATE(
+                                COUNT('Pharma Group AG'[Job Level after FY20 promotions]), 
+                                'Pharma Group AG'[FY20 leaver?] = "Yes")
+
+# Promotees Job Level
+Job Levels Promotion = CALCULATE(
+                                 COUNT('Pharma Group AG'[Job Level after FY20 promotions]), 
+                                 'Pharma Group AG'[Promotion in FY21?] = "Yes")
+```
+* These measures are used to calculate the number of new hires, turnovers, and promoted employeed based on department.
+```
+# New Hires Department
+Department Hire = CALCULATE(
+                            COUNT('Pharma Group AG'[Department @01.07.2020]),
+                            'Pharma Group AG'[New hire FY20?] = "Y")
+
+# Leavers Department
+Department Turnovers = CALCULATE(
+                                 COUNT('Pharma Group AG'[Department @01.07.2020]),
+                                 'Pharma Group AG'[FY20 leaver?] = "Yes")
+
+# Promotees Department
+Department Promotions = CALCULATE(
+                                  COUNT('Pharma Group AG'[Department @01.07.2020]),
+                                  'Pharma Group AG'[Promotion in FY21?] = "Yes")
+```
+* This measure is used to calculate the percentage of women who are promoted.
+```
+% of Women Promoted = (CALCULATE(
+                                 COUNT('Pharma Group AG'[Promotion in FY21?]),
+                                 'Pharma Group AG'[Gender] = "Female", 
+                                 'Pharma Group AG'[Promotion in FY21?] = "Yes")/
+                       CALCULATE(
+                                 COUNT('Pharma Group AG'[Employee ID]), 
+                                 'Pharma Group AG'[Gender] = "Female")
+                       ) * 100
+
+# The first part of this measure uses the CALCULATE and COUNT functions to count the number of women who are promoted.
+# The second part of this measure uses the CALCULATE and COUNT functions to count the total number of women.
+# The number of women promoted is then divided by the total number of women.
+# The last part of the measure multiplies the everything by 100.
+```
+* These measures are used to calculate the average performance of employees based on gender.
+```
+# Avgerage Performance Men
+Average Performance Rating Men = CALCULATE(
+                                           AVERAGE('Pharma Group AG'[FY20 Performance Rating]), 
+                                           'Pharma Group AG'[Gender] = "Male")
+
+# Average Performance Women
+Average Performance Rating Women = CALCULATE(
+                                             AVERAGE('Pharma Group AG'[FY20 Performance Rating]), 
+                                             'Pharma Group AG'[Gender] = "Female")
+```
+* This measure is used to calculate the number of executives.
+```
+Executive Split = CALCULATE(
+                            COUNT('Pharma Group AG'[Employee ID]), 
+                            'Pharma Group AG'[Job Level after FY20 promotions] = "1 - Executive")
+```
+## Data Modelling
+When creating bar charts with data that includes job levels or departments, the bars are arranged in ascending or descending order based on value. This is because neither job levels or departments have an inherent ranking that Power BI recognize.
+
+An index is created for both job levels and departments. The indexes give a ranking to each job level and each department so that when they are plotted in bar charts, the bars will be arranged in a consistent order.
+
+The image below shows the department index. When plotted in a bar chart, the bar that represents Operations will be the first and the bar that represents HR will be last.
+
+![Department Index](Department_Index.png)
+
+The image below shows the job level index. When plotted in a bar chart, the bar that represents Junior Officer will be first and the bar that represents Executive will be last.
+
+![Job Level Index](Job_Level_Index.png)
+
+The image below shows the data model between the department index, job level index, and the rest of the data. The department index shares a relationship with the "Department @01.07.2020" column. The job level index share a relationship with the "Job Level after FY20 promotions" column.
+
+![Data Model](Data_Model.png)
+
+## Data Analysis and Visuals
