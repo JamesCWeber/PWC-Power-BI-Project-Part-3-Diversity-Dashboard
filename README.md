@@ -169,7 +169,8 @@ Number of Turnover = CALCULATE(
                                       )
                              )
 
-# The DIVIDE() function is used to divide 2 numbers or the output of 2 functions. The first part of the DIVIDE() function represents the numerator and the second part represents the denominator.
+# The DIVIDE() function is used to divide 2 numbers or the output of 2 functions.
+# The first part of the DIVIDE() function represents the numerator and the second part represents the denominator.
 ```
 * These measures are used to calculate the average age and performance rating for men and women.
 ```
