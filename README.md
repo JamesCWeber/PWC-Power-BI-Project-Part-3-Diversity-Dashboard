@@ -198,3 +198,17 @@ Avg. Age: Male = CALCULATE(
 ```
 
 ## Data Analysis and Visuals
+A copy of the below dashboards are included in this repository under the file name: James Weber PwC Diversity Dashboard.pbix.
+
+The below images is a screenshot of the first page of the Diversity Dashboard.
+![Diversity Dashboard Page 1](Diversity_Dashboard_1.png)
+
+
+The below images is a screenshot of the second page of the Diversity Dashboard.
+![Diversity Dashboard Page 2](Diversity_Dashboard_2.png)
+
+
+The below images is a screenshot of the last page of the Diversity Dashboard.
+![Diversity Dashboard Page 3](Diversity_Dashboard_3.png)
+
+*
