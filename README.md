@@ -211,4 +211,8 @@ The below images is a screenshot of the second page of the Diversity Dashboard.
 The below images is a screenshot of the last page of the Diversity Dashboard.
 ![Diversity Dashboard Page 3](Diversity_Dashboard_3.png)
 
-*
+* Male employees make up 59% of PhoneNow's workforce, female employees make up 41%. The gender balance within the executive level should resemble the gender balance of the whole company.
+* Lower level positions like Junior Officer, Senior Officer, and Manager positions gain more female new hires than male new hires. There are no female new hires for Executive level positions. The lack of female new hires in higher level positions will affect future executive gender balance. Female employees have a better chance of being promoted into Executive level positions when they are hired into higher level positions like Senior Manager or Director.
+* There are more male employees leaving PhoneNow than female employees. There may be more male employees leaving because there are more male employees working in PhoneNow. Both male and female leavers have lower average performance scores than male and female employees who are staying. Only female employees in Manager level positions have a lower average score than female leavers. Further investigation may be needed to explain the discrepancy.
+* Both male and female employees have similar average performance score, with male employees having a slightly higher score. Males make up a higher percentage for all scores because there are more male employees than female employees.
+* 
