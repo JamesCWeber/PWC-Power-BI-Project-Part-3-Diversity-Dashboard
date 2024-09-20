@@ -215,4 +215,14 @@ The below images is a screenshot of the last page of the Diversity Dashboard.
 * Lower level positions like Junior Officer, Senior Officer, and Manager positions gain more female new hires than male new hires. There are no female new hires for Executive level positions. The lack of female new hires in higher level positions will affect future executive gender balance. Female employees have a better chance of being promoted into Executive level positions when they are hired into higher level positions like Senior Manager or Director.
 * There are more male employees leaving PhoneNow than female employees. There may be more male employees leaving because there are more male employees working in PhoneNow. Both male and female leavers have lower average performance scores than male and female employees who are staying. Only female employees in Manager level positions have a lower average score than female leavers. Further investigation may be needed to explain the discrepancy.
 * Both male and female employees have similar average performance score, with male employees having a slightly higher score. Males make up a higher percentage for all scores because there are more male employees than female employees.
-* 
+* Female employees in lower level positions have a better chance at promotion compared to male employees. Female promotees in all job levels have a longer average time in grade than male promotees.
+* Male and female employees have similar average age. Employees who are executive level are primarily in the 40 to 49 age range.
+* There are no female executive new hires. There is only 1 female employee who was promoted to executive level compared to 3 male employees. From FY20 to FY21, the percentage of female executive rose 3%.
+
+## Conclusions and Recommendations
+* Male and female employees have similar performance ratings and age distribution. For both genders, employees who leave PhoneNow tend to have lower performance ratings.
+* The biggest factors that affect the imbalance between male and female employees in the executive level seems to be:
+  * There are less female new hires in higher level positions than male new hires.
+  * Male employees are more often promoted than female employees at higher job levels.
+  * Female employees who are promoted spend a longer time in grade on average than male employees.
+*    
