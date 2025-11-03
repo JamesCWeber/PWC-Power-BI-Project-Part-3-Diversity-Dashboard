@@ -6,7 +6,7 @@ This dashboard is final part of a project from the [PwC Power BI micro-internshi
 In this task, the Human Resources department for PhoneNow, a fictional telecom company, has tasked me to construct a dashboard about gender balance. The purpose of creating the dashboard is to help identify issues that may cause gender imbalance at the executive level.
 
 ## Problem Statement
-PhoneNow's Human Resources dapartment consider diversity and inclusions as business imperatives. The department is working hard to address the gender inbalance at the executive management level but they are seeing no progress in their efforts. The department requests a dashboard that highlights relevant Key Perfromance Indicators which can indicate portential solutions to solving the gender inbalance issue at the executive management level.
+PhoneNow's Human Resources dapartment consider diversity and inclusions as business imperatives. The department is working hard to address the gender inbalance at the executive management level but they are seeing no progress in their efforts. The department requests a dashboard that highlights relevant Key Performance Indicators which can indicate potential solutions to solving the gender imbalance issue at the executive management level.
 
 ## Skills Demonstrated
 * Power BI
